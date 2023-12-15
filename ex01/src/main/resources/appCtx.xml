@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- appCtx.xml -->
+    <!-- IRecordImpl record = new IRecordImpl(); -->
+    <bean id="record" class="com.by.spring.ex02.IRecordImpl">
+        <constructor-arg><value>100</value></constructor-arg>
+        <constructor-arg value="88"></constructor-arg>
+        <constructor-arg value="77"></constructor-arg>
+        <constructor-arg value="66"/>
+    </bean>
+
+    <bean id="view" class="com.by.spring.ex02.IRecordViewImpl">
+        <property name="record" ref="record"/>      <!-- property 태그는 bean 클래스의 setter 메소드를 찾아감 -->
+    </bean>
+
+</beans>
