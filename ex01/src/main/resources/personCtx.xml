@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="employee" class="com.by.spring.ex05.EmployeePersonImpl">
+        <constructor-arg name="name" value="kim"/>
+        <constructor-arg name="gender" value="남자"/>
+        <constructor-arg name="age" value="27"/>
+        <constructor-arg>
+            <list>
+                <value>독서</value>
+                <value>잠자기</value>
+                <value>PC</value>
+            </list>
+        </constructor-arg>
+    </bean>
+
+    <bean id="student" class="com.by.spring.ex05.StudentPersonImpl">
+        <property name="name" value="choi"/>
+        <property name="gender" value="남자"/>
+        <property name="age" value="33"/>
+        <property name="score">
+            <list>
+                <value>99</value>
+                <value>88</value>
+                <value>77</value>
+            </list>
+        </property>
+    </bean>
+
+    <bean id="info" class="com.by.spring.ex05.MyInformation" p:person-ref="student"/>
+    <bean id="info2" class="com.by.spring.ex05.MyInformation" p:person-ref="employee"/>
+
+</beans>
