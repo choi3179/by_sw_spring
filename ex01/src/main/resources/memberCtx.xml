@@ -3,13 +3,13 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="vo" class="com.by.spring.ex03.MemberDTO">
+    <bean id="vo" class="com.by.spring.di.ex03.MemberDTO">
         <constructor-arg value="kim"/>
         <constructor-arg value="66"/>
         <constructor-arg value="hello"/>
     </bean>
 
-    <bean id="dao" class="com.by.spring.ex03.MemberDAO">
+    <bean id="dao" class="com.by.spring.di.ex03.MemberDAO">
         <!--<constructor-arg ref="vo"/>-->
         <property name="dto" ref="vo"/>
     </bean>

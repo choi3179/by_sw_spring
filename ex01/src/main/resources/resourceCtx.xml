@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xmlns:p="http://www.springframework.org/schema/p" xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:context="http://www.springframework.org/schema/context"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
 
     <context:annotation-config/>
-        <bean id="player" class="com.by.spring.di.ex04.PlayerImpl" name="p1, p2"/>
-        <bean id="soccer" class="com.by.spring.di.ex04.Soccer"/>
-        <bean id="curling" class="com.by.spring.di.ex04.Curling"/>
 
+    <bean id="r1" name="record1, x" class="com.by.spring.anot.resource.Recorder"/>
+    <bean id="r2" name="record2, y" class="com.by.spring.anot.resource.Recorder"/>
+    <bean id="r3" name="record3, z" class="com.by.spring.anot.resource.Recorder"/>
+
+    <bean id="monitor" class="com.by.spring.anot.resource.MonitorViewer"/>
 </beans>

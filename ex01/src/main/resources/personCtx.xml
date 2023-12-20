@@ -3,7 +3,7 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="employee" class="com.by.spring.ex05.EmployeePersonImpl">
+    <bean id="employee" class="com.by.spring.di.ex05.EmployeePersonImpl">
         <constructor-arg name="name" value="kim"/>
         <constructor-arg name="gender" value="남자"/>
         <constructor-arg name="age" value="27"/>
@@ -16,7 +16,7 @@
         </constructor-arg>
     </bean>
 
-    <bean id="student" class="com.by.spring.ex05.StudentPersonImpl">
+    <bean id="student" class="com.by.spring.di.ex05.StudentPersonImpl">
         <property name="name" value="choi"/>
         <property name="gender" value="남자"/>
         <property name="age" value="33"/>
@@ -29,7 +29,7 @@
         </property>
     </bean>
 
-    <bean id="info" class="com.by.spring.ex05.MyInformation" p:person-ref="student"/>
-    <bean id="info2" class="com.by.spring.ex05.MyInformation" p:person-ref="employee"/>
+    <bean id="info" class="com.by.spring.di.ex05.MyInformation" p:person-ref="student"/>
+    <bean id="info2" class="com.by.spring.di.ex05.MyInformation" p:person-ref="employee"/>
 
 </beans>

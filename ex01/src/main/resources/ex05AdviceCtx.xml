@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--
+        1. before
+        2. around (대상 메소드 수행 전)
+        3. 대상 메소드
+        4. after-returning
+        5. after(finally)
+        6. around (대상 메소드 수행 후)
+    -->
+
+    <bean class="com.by.spring.aop.ex05.ICalcImpl" id="calc"/>
+    <bean class="com.by.spring.aop.ex05.LogPrintBeforeAdvice" id="logPrintBeforeAdvice"/>
+    <bean class="com.by.spring.aop.ex05.LogPrintAfterAdvice" id="logPrintAfterAdvice"/>
+
+    <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="proxy">
+        <property name="proxyInterfaces">
+            <list>
+                <value>com.by.spring.aop.ex05.ICalc</value>
+            </list>
+        </property>
+
+        <property name="target">
+            <ref bean="calc"/>
+        </property>
+
+        <property name="interceptorNames">
+            <list>
+                <value>logPrintBeforeAdvice</value>
+                <value>logPrintAfterAdvice</value>
+            </list>
+        </property>
+    </bean>
+
+</beans>
