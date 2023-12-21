@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/aop https://www.springframework.org/schema/aop/spring-aop.xsd">
 
+    <aop:aspectj-autoproxy/>
+
+    <bean class="com.by.spring.aop.ex06_annotation.LogApp" id="advice"/>
+
+    <bean class="com.by.spring.aop.ex06_annotation.Student"
+          id="student" p:name="kim" p:age="22" p:classNum="5" p:gradeNum="3"/>
+
+    <bean class="com.by.spring.aop.ex06_annotation.Employee"
+          id="employee" p:name="choi" p:age="33" p:job="teacher"/>
 </beans>

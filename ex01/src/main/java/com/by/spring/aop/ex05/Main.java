@@ -14,6 +14,8 @@ public class Main {
         System.out.println(proxyCalc.mul(10,20));
         System.out.println();
         System.out.println(proxyCalc.sub(13,1,2));
+        System.out.println();
+        System.out.println(proxyCalc.sub(5,13,2));
 
     }
 }

@@ -15,6 +15,8 @@
     <bean class="com.by.spring.aop.ex05.ICalcImpl" id="calc"/>
     <bean class="com.by.spring.aop.ex05.LogPrintBeforeAdvice" id="logPrintBeforeAdvice"/>
     <bean class="com.by.spring.aop.ex05.LogPrintAfterAdvice" id="logPrintAfterAdvice"/>
+    <bean class="com.by.spring.aop.ex05.LogPrintAroundAdvice" id="logPrintAroundAdvice"/>
+    <bean class="com.by.spring.aop.ex05.LogPrintThrowingAdvice" id="logPrintThrowingAdvice"/>
 
     <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="proxy">
         <property name="proxyInterfaces">
@@ -31,6 +33,8 @@
             <list>
                 <value>logPrintBeforeAdvice</value>
                 <value>logPrintAfterAdvice</value>
+                <value>logPrintAroundAdvice</value>
+                <value>logPrintThrowingAdvice</value>
             </list>
         </property>
     </bean>
