@@ -11,7 +11,23 @@
     <insert id="insert" parameterType="com.by.springboot.mybatisEx.model.TableVO">
         INSERT INTO TESTTABLE VALUES(#{userCode},#{userName});
     </insert>
-    <!--R-->
-    <!--U-->
-    <!--D-->
+
+    <!-- R -->
+    <select id="selectAllList" resultType="hashmap">  <!-- 애가 VO가 아닌 Hashmap이어야 된다!!!! -->
+        SELECT * FROM testTable
+    </select>
+
+    <select id="selectByUserCode" resultType="com.by.springboot.mybatisEx.model.TableVO">
+        SELECT * FROM testTable WHERE userCode = #{userCode}
+    </select>
+
+    <!-- U -->
+    <update id="update" parameterType="com.by.springboot.mybatisEx.model.TableVO">
+        UPDATE testTable SET userName=#{userName} WHERE userCode=#{userCode}
+    </update>
+
+    <!-- D -->
+    <delete id="deleteByUserCode">
+        DELETE FROM testTable WHERE userCode = #{userCode}
+    </delete>
 </mapper>

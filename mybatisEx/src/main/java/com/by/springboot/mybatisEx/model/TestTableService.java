@@ -19,4 +19,6 @@ public interface TestTableService {
 
     //D
     public int deleteByUserCode(int userCode) throws Exception;
+
+    public void delete(int userCode) throws Exception;
 }

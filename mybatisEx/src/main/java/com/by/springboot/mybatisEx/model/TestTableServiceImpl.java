@@ -43,4 +43,10 @@ public class TestTableServiceImpl implements TestTableService{
     public int deleteByUserCode(int userCode) {
         return testTableMapper.deleteByUserCode(userCode);
     }
+
+    @Override
+    public void delete(int userCode) throws Exception {
+        testTableMapper.deleteByUserCode(userCode);
+
+    }
 }
