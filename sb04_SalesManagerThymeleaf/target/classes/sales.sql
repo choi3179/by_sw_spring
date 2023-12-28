@@ -45,7 +45,7 @@ commit;
 
 
 
-drop table sales;
+/*drop table sales;
 --------------------------------------------------------
 create table Sales 
 (
@@ -84,4 +84,4 @@ select SALE_SEQUENCE.nextval from dual;
 ----------------------------------------------
 commit;
 
-desc sales;
+desc sales;*/

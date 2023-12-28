@@ -12,14 +12,15 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public class SalesDAO {
+
 	@Autowired
-	private JdbcTemplate jdbcTemplate;
+	private JdbcTemplate jdbcTemplate;		// DML 명령어 처리 클래스
 
 	public List<Sale> list() {
 		String sql = "SELECT * FROM SALES";
 
 		List<Sale> listSale = jdbcTemplate.query(sql, 
-				BeanPropertyRowMapper.newInstance(Sale.class));
+				BeanPropertyRowMapper.newInstance(Sale.class));		// RowMapper : sql과 VO class를 매핑시키는 역할
 
 		return listSale;
 	}
