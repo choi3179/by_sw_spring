@@ -1,0 +1,7 @@
+package ex02.di;
+
+public class MainEtry {
+	public static void main(String[] args) {
+		
+	}
+}

@@ -1,0 +1,16 @@
+package ex01.annot.java;
+
+import java.util.ArrayList;
+
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class JavaConfig {  // xml 설정파일 역할  ex) ctx.xml, appCtx.xml,.....
+	
+	
+	public MyCats cat1() {  // MyCats cat1 = new MyCats(); / <bean id="cat1" class="ex01.annot.java.JavaConfig" />
+		ArrayList<String> hobbys = new ArrayList();
+		
+	}
+
+}

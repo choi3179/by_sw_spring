@@ -1,0 +1,12 @@
+package ex01.di;
+
+public class Soccer {
+	
+	private PlayerImpl player;
+
+	public void setPlayer(PlayerImpl player) {  // DI
+		this.player = player;
+	}
+	
+	
+}

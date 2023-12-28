@@ -1,0 +1,21 @@
+package edu.encore.view;
+
+import java.sql.Connection;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import edu.encore.dao.MariaDBUserDAOImpl;
+import edu.encore.dao.UserDAO;
+
+public class MainEntry {
+	public static void main(String[] args) throws Exception {
+		
+		ApplicationContext ctx = new ClassPathXmlApplicationContext("ctx.xml");
+		
+		
+//		UserDAO dao = new MariaDBUserDAOImpl();
+//		Connection conn = dao.getConnection();
+//		System.out.println(conn.toString());
+	}
+}

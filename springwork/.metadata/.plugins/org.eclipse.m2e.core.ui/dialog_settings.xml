@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="wizardPage">
+		<list key="groupId">
+			<item value="spring_web_basic"/>
+			<item value="sp05_springMVC_DAO"/>
+			<item value="sp05_springDAO"/>
+			<item value="sp04_aop"/>
+			<item value="sp03_annotation"/>
+			<item value="sp03_di"/>
+			<item value="sp01_di"/>
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+			<item value="spring_web_basic"/>
+			<item value="sp05_springMVC_DAO"/>
+			<item value="sp05_springDAO"/>
+			<item value="sp04_aop"/>
+			<item value="sp03_annotation"/>
+			<item value="sp03_di"/>
+			<item value="sp01_di"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+</section>

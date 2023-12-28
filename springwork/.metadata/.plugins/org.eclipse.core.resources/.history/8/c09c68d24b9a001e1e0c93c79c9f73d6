@@ -1,0 +1,11 @@
+package kr.edu.encore;
+
+//public class InfoController implements Controller {  // 
+
+@Controller
+public class InfoController {
+
+	
+	
+	
+}

@@ -1,0 +1,21 @@
+package ex04.nonDI;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class MainEntry {
+	public static void main(String[] args) {
+		
+		
+		ApplicationContext context = new ClassPathXmlApplicationContext(""); // 설정파일 기재 - xml기반 
+		
+//		IRecordImpl  record = new IRecordImpl();
+//		
+//		IRecordViewImpl view = new IRecordViewImpl();
+//		
+//		// 조립
+//		view.setRecord(record);
+//		view.input();
+//		view.print();
+	}
+}

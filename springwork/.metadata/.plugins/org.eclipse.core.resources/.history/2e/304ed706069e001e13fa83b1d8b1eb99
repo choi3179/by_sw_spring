@@ -1,0 +1,22 @@
+package ex03.di.qualifier;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import lombok.NoArgsConstructor;
+
+@NoArgsConstructor
+public class MoniterViewer {
+	
+	
+	}
+
+
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,34 @@
+package ex03.di.qualifier;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+
+import lombok.NoArgsConstructor;
+
+@NoArgsConstructor   // default constuctor 
+public class MoniterViewer {
+	
+	private Recorder recorder;  // has-a
+	
+
+//	@Inject
+	@Autowired(required = false) /* default : required = true */
+	public MoniterViewer(@Qualifier("key") Recorder recorder) {  // constructor method  DI
+		this.recorder = recorder;
+		System.out.println("@Autowired 자동 주입");
+	}
+
+	public void show() {
+		recorder.show();
+		System.out.println("MoniterViewer class show method call~~~~");
+	}
+
+}
+
+
+
+
+
+
+
+
