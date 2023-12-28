@@ -14,5 +14,6 @@
     </c:forEach>
 
     <input type="button" value="지점저장" onclick="javascript:window.location.href = 'writeform.do'" >
+    <input type="button" value="삭제" onclick="javascript:window.location.href = 'deleteform.do' " >
 </body>
 </html>

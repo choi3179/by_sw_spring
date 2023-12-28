@@ -27,6 +27,14 @@ public class DeptDAOImpl implements DeptDAO {
 		this.jdbcTemplate.update(sql, arr);
 	}
 
+	@Override
+	public void deleteDept(int deptno) {
+		String sql = "DELETE FROM DEPT WHERE DEPTNO = ?";
+		Object obj = deptno;
+
+		this.jdbcTemplate.update(sql,obj);
+	}
+
 }
 
 

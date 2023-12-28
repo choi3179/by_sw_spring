@@ -12,6 +12,7 @@
     <bean class="kr.encore.controller.WriteController"/>
     <bean class="kr.encore.controller.WriteFormController"/>
     <bean class="kr.encore.controller.ListController"/>
+    <bean class="kr.encore.controller.DeleteController"/>
 
     <!--ViewResolver 빈 객체 생성-->
     <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
