@@ -11,7 +11,7 @@
 <title>ex03_el.jsp</title>
 </head>
 <body>
-<form action="ex03_el.jsp"  method="post">
+<form action="el_ex03.jsp" method="post">
 	<ul>
 		<li>
 				<label for="name">이름 </label>

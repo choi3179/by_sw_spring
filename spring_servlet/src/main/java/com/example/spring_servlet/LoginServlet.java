@@ -1,4 +1,4 @@
-package ex02.login;
+package com.example.spring_servlet;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -16,7 +16,7 @@ public class LoginServlet extends HttpServlet {
 
 
 		// DB 대체
-		public String user = "kingsmile";
+			public String user = "kingsmile";
 		public String passwd = "1004";
 
 		protected void doGet(HttpServletRequest request, 
