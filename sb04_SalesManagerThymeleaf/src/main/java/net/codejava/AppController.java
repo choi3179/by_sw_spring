@@ -34,9 +34,10 @@ public class AppController {
 	
 	@RequestMapping(value = "/save", method = RequestMethod.POST)
 	public String save(@ModelAttribute("sale") Sale sale) {
-	    dao.save(sale);
-	     
-	    return "redirect:/";
+
+		dao.save(sale);
+
+		return "redirect:/";
 	}
 	
 	@RequestMapping("/edit/{id}")

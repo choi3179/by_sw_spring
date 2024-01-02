@@ -18,7 +18,11 @@ spring:
   devtools:
     livereload:
       enabled: true
-    
+
+mybatis:
+  type-aliases-package: net.codejava.mapper
+  mapper-locations: mybatis/**/*.xml
+
 #thymeleaf auto refresh
   thymeleaf:
     cache: false
