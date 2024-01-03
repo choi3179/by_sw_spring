@@ -1,0 +1,27 @@
+select * from users;
+drop table users;
+
+CREATE TABLE users (
+    userid INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(50) NOT NULL,
+    passwd VARCHAR(100) NOT NULL,
+    enabled TINYINT(1) DEFAULT 1,  			
+    authority VARCHAR(30)
+);
+
+INSERT INTO users (name, passwd, enabled, authority) VALUES ('kingsmile', '1', 1, '관리자');
+------
+
+CREATE TABLE roll (
+    userid VARCHAR(20),
+    Role_name VARCHAR(30)
+);
+
+-- ROLE_USER , ROLE_ADMIN
+INSERT INTO roll VALUES('admin', 'ROLE_USER');
+INSERT INTO roll VALUES('admin', 'ROLE_ADMIN');
+
+INSERT INTO roll VALUES('simson', 'ROLE_USER');
+
+select * from roll;
+
