@@ -1,0 +1,10 @@
+package ex03.aop;
+
+import java.lang.reflect.Proxy;
+
+public class MainEntry {
+	public static void main(String[] args) {
+		
+		
+	}
+}

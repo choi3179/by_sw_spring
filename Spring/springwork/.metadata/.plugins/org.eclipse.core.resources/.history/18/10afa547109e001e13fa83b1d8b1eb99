@@ -1,0 +1,31 @@
+package ex04.di.resource;
+
+import javax.annotation.Resource;
+
+public class MoniterViewer {
+	
+	private Recorder recorder;  // has-a
+
+	@Resource(name = "r3")
+	public void setRecorder(Recorder recorder) {  // DI
+		this.recorder = recorder;
+		
+		recorder.show();
+		System.out.println(recorder);
+		System.out.println("@Resource 주입");
+	}
+	
+	
+	
+
+
+
+}
+
+
+
+
+
+
+
+

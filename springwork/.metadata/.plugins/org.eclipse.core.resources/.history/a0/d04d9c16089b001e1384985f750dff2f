@@ -1,7 +1,0 @@
-package ex04.nonDI;
-
-public interface IRecord {
-	
-	int total();
-	float avg();
-}

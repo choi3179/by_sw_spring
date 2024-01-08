@@ -1,0 +1,16 @@
+package ex04.aop;
+
+import org.aspectj.lang.ProceedingJoinPoint;
+
+/*XML 기반 POJO방식의 AspectJ를 이용한 AOP 방법*/
+public class LoggingAdvice {
+	
+//	Around 방식의 사전/사후 처리 AOP around 방식으로 할때는
+//	인수는 ProceedingJoinPoint, 리턴 - Object 필수 
+	
+	public Object arround(ProceedingJoinPoint point) throws Throwable {
+		
+		
+		return null;
+	}
+}

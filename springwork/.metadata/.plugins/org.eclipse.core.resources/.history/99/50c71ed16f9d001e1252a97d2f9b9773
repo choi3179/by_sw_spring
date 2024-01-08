@@ -1,9 +1,0 @@
-package ex01.annot.java;
-
-import lombok.AllArgsConstructor;
-
-@AllArgsConstructor
-public class Cats {
-	
-	private MyCats myCats;
-}

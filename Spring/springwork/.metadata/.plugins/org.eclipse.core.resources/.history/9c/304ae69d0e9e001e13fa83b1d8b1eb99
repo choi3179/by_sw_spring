@@ -1,0 +1,33 @@
+package ex04.di.resource;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+
+import lombok.NoArgsConstructor;
+
+public class MoniterViewer {
+	
+	private Recorder recorder;  // has-a
+
+	public void setRecorder(Recorder recorder) {  // DI
+		this.recorder = recorder;
+		
+		recorder.show();
+		System.out.println(recorder);
+		System.out.println("@Resource 주입");
+	}
+	
+	
+	
+
+
+
+}
+
+
+
+
+
+
+
+

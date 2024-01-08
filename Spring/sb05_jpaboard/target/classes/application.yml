@@ -1,0 +1,35 @@
+# MariaDB setting
+spring:
+  sql:
+    init:
+      platform: mariadb
+      encoding: UTF-8
+      mode: always
+      
+# View
+  mvc:
+    view:
+      prefix: /jsp/
+      suffix: .jsp
+      
+# MariaDB
+  datasource:
+    url: jdbc:mariadb://localhost:3306/sampledb
+    driver-class-name: org.mariadb.jdbc.Driver
+    username: root
+    password: root
+    
+# Hibernate config
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop  
+    database-platform: org.hibernate.dialect.MariaDBDialect
+      
+# Thymeleaf auto refresh
+  thymeleaf:
+    cache: false
+
+
+
+

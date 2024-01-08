@@ -1,0 +1,20 @@
+package ex01.di;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class MainEntry {
+	public static void main(String[] args) {
+		
+		String config = "ex01/di/playerCtx.xml";
+		ApplicationContext ctx =
+				new ClassPathXmlApplicationContext(config);
+		
+		PlayerImpl p = ctx.getBean("player", PlayerImpl.class);
+		
+		Soccer s = (Soccer)ctx.getBean("soccer");
+		
+		p.input();
+		p.info();
+	}
+}

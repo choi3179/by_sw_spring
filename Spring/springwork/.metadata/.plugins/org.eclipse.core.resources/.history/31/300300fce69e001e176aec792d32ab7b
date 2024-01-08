@@ -1,0 +1,5 @@
+package edu.encore.dao;
+
+public abstract class UserDAO {
+
+}

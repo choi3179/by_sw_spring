@@ -1,7 +1,0 @@
-package ex05.DI;
-
-public class MainEntry {
-	public static void main(String[] args) {
-		MemberDTO dto = new MemberDTO();
-	}
-}

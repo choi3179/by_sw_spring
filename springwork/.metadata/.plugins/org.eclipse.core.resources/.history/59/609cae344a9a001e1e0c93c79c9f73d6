@@ -1,6 +1,0 @@
-package kr.edu.encore;
-
-public class InfoController implements Controller {
-	
-	
-}

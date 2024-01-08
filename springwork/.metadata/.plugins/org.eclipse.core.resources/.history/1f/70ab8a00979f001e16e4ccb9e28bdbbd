@@ -1,5 +1,0 @@
-package kr.encore.model;
-
-public interface DeptDAO {
-
-}

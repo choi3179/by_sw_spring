@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- TestTableMapper.xml-->
+<mapper namespace="com.by.springboot.mybatisEx.model.mapper.TestTableMapper">
+
+    <!--C-->
+    <insert id="insert" parameterType="com.by.springboot.mybatisEx.model.TableVO">
+        INSERT INTO TESTTABLE VALUES(#{userCode},#{userName});
+    </insert>
+
+    <!-- R -->
+    <select id="selectAllList" resultType="hashmap">  <!-- 애가 VO가 아닌 Hashmap이어야 된다!!!! -->
+        SELECT * FROM testTable
+    </select>
+
+    <select id="selectByUserCode" resultType="com.by.springboot.mybatisEx.model.TableVO">
+        SELECT * FROM testTable WHERE userCode = #{userCode}
+    </select>
+
+    <!-- U -->
+    <update id="update" parameterType="com.by.springboot.mybatisEx.model.TableVO">
+        UPDATE testTable SET userName=#{userName} WHERE userCode=#{userCode}
+    </update>
+
+    <!-- D -->
+    <delete id="deleteByUserCode">
+        DELETE FROM testTable WHERE userCode = #{userCode}
+    </delete>
+</mapper>

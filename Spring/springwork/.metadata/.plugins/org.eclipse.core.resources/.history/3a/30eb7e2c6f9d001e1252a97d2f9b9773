@@ -1,0 +1,8 @@
+package ex01.annot.java;
+
+import lombok.Data;
+
+@Data
+public class MyCats { //extends Object {
+	
+}

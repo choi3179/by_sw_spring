@@ -1,0 +1,5 @@
+
+12월 20, 2023 11:34:41.315 NEW SESSION
+12월 20, 2023 11:34:41.315 [10960:4712:1220/113441.311:ERROR:device_event_log_impl.cc(192)] [11:34:41.310] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: 요소가 없습니다. (0x490)
+12월 20, 2023 14:51:00.33 [10960:4712:1220/145100.032:ERROR:device_event_log_impl.cc(192)] [14:51:00.032] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: 요소가 없습니다. (0x490)
+12월 20, 2023 17:37:53.951 [10960:4712:1220/173753.951:ERROR:device_event_log_impl.cc(192)] [17:37:53.950] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: 요소가 없습니다. (0x490)

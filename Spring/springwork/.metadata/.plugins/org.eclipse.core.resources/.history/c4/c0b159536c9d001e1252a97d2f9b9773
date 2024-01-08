@@ -1,0 +1,14 @@
+package ex02.di;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class MainEtry {
+	public static void main(String[] args) {
+		
+		ApplicationContext ctx = 
+				new ClassPathXmlApplicationContext("ex02/di/ctx.xml");
+		
+		
+	}
+}

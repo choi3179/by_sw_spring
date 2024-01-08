@@ -1,0 +1,20 @@
+
+spring:
+  sql:
+    init:
+      platform: mariadb
+      encoding: UTF-8
+      mode: always
+
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    url: jdbc:mariadb://localhost:3306/sampledb
+    username: root
+    password: root
+
+  thymeleaf:
+    cache: false
+
+mybatis:
+  type-aliases-package: com.by.springboot.mybatisEx.model.mapper
+  mapper-locations: mybatis/**/*.xml

@@ -1,0 +1,5 @@
+package edu.encore.model;
+
+public class UserVO {
+
+}

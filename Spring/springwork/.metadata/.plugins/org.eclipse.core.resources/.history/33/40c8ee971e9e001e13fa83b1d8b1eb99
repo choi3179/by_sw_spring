@@ -1,0 +1,39 @@
+package ex02.aop.java;
+
+import java.lang.reflect.InvocationHandler;
+import java.lang.reflect.Method;
+
+public class LogPrintHandlerImpl implements InvocationHandler {
+	
+	private Object target;
+	
+	public LogPrintHandlerImpl(Object target) {   // DI
+		this.target = target;
+	}
+
+	@Override
+	public Object invoke(Object proxy, Method method, Object[] args)   // 보조프로그램 구현
+			throws Throwable {
+		System.out.println("invoke method start......");
+		// 보조 업무 구현
+		
+		
+		//////////// main 관심 실행 ////////////////////
+		int result ;
+		////////////////////////////////////////////////
+		
+		
+		return result;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+

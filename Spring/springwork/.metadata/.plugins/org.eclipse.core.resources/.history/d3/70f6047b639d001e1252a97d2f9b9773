@@ -1,0 +1,17 @@
+package ex02.di;
+
+public class EmployeePersonImpl implements Person {
+
+	@Override
+	public boolean personShow(String name, int age, String gender) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean personShow(Person person) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

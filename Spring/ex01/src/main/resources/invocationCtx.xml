@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- invocationCtx.xml -->
+    <bean class="com.by.spring.aop.ex02.ICalcImpl" id="c"/>
+    <bean class="com.by.spring.aop.ex02.LogHandlerImpl" id="logHandlerImpl"/>
+
+    <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="proxy">
+        <property name="proxyInterfaces">
+            <list>
+                <value>com.by.spring.aop.ex02.ICalc</value>     <!--인터페이스-->
+            </list>
+        </property>
+        <property name="target" ref="c"/>
+
+        <property name="interceptorNames">      <!--handler : 보조 업무-->
+            <list>
+                <value>logHandlerImpl</value>
+            </list>
+        </property>
+    </bean>
+    
+</beans>

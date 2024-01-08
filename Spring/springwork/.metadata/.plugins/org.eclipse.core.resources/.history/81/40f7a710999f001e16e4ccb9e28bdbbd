@@ -1,0 +1,19 @@
+package kr.encore.model;
+
+import java.util.List;
+
+public class DeptDAOImpl implements DeptDAO {
+
+	@Override
+	public List listDept() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void insertDept(DeptDTO dto) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

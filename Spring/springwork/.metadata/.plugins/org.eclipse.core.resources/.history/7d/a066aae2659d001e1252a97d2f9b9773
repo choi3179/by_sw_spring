@@ -1,0 +1,15 @@
+package ex02.di;
+
+import lombok.Data;
+
+@Data
+public class MyInfomation {
+	
+	private Person person;   // has-a
+	
+	// setter method DI
+	
+	public boolean proessMessage(StudentPersonImpl student) {
+		return this.person.personShow(student.getName(), student.getAge(), student.getGender());
+	}
+}

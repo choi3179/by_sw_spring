@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="net.codejava.mapper.SalesMapper">
+    <!--C-->
+    <insert id="insert" parameterType="net.codejava.Sale">
+        INSERT INTO SALES VALUES(#{id}, #{item}, #{quantity}, #{amount});
+    </insert>
+
+    <!-- R -->
+    <select id="selectAll" resultType="hashmap">  <!-- 애가 VO가 아닌 Hashmap이어야 된다!!!! -->
+        SELECT * FROM SALES
+    </select>
+
+    <select id="selectById" resultType="net.codejava.Sale">
+        SELECT * FROM SALES WHERE id = #{id}
+    </select>
+
+    <!-- U -->
+    <update id="update" parameterType="net.codejava.Sale">
+        UPDATE SALES SET item=#{item}, quantity=#{quantity},amount=#{amount}
+        WHERE id=#{id}
+    </update>
+
+    <!-- D -->
+    <delete id="delete">
+        DELETE FROM SALES WHERE id = #{id}
+    </delete>
+</mapper>
